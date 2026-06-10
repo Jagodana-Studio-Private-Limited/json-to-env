@@ -1,27 +1,35 @@
 export const siteConfig = {
   // ====== CUSTOMIZE THESE FOR EACH TOOL ======
-  name: "{{TOOL_NAME}}",
-  title: "{{TOOL_TITLE}}",
-  description: "{{TOOL_DESCRIPTION}}",
-  url: "https://{{TOOL_SLUG}}.jagodana.com",
+  name: "JSON to ENV Converter",
+  title: "JSON to ENV Converter — Convert JSON to .env and .env to JSON Free",
+  description:
+    "Instantly convert JSON objects to .env file format and .env files back to JSON. Supports nested key flattening, copy to clipboard, and file download. 100% client-side — no data leaves your browser.",
+  url: "https://json-to-env.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
   // Header
-  headerIcon: "Wrench", // lucide-react icon name (e.g., Image, Map, Code, Palette, Globe, FileSearch)
-  // Brand gradient colors for Tailwind are in globals.css (--brand / --brand-accent)
-  // Use text-brand, from-brand, to-brand-accent etc. in components
-  brandAccentColor: "#06b6d4", // hex accent for OG image gradient (must match --brand-accent in globals.css)
+  headerIcon: "FileCode2",
+  brandAccentColor: "#6366f1", // indigo-500
 
   // SEO
   keywords: [
-    "{{KEYWORD_1}}",
-    "{{KEYWORD_2}}",
-    "{{KEYWORD_3}}",
+    "json to env",
+    "env to json",
+    "json to dotenv converter",
+    "convert json to env file",
+    "dotenv to json",
+    "environment variables converter",
+    "json env converter online",
+    "dotenv generator",
+    "json to .env online",
+    ".env to json converter",
+    "flatten json to env",
+    "developer tools",
   ],
-  applicationCategory: "DeveloperApplication", // or "DesignApplication", "UtilitiesApplication"
+  applicationCategory: "DeveloperApplication",
 
   // Theme
-  themeColor: "#10b981", // used in manifest and meta tags
+  themeColor: "#3b82f6", // blue-500
 
   // Branding
   creator: "Jagodana",
@@ -31,144 +39,164 @@ export const siteConfig = {
   // Social Profiles (for Organization schema sameAs)
   socialProfiles: [
     "https://twitter.com/jagodana",
-    // Add more: LinkedIn, YouTube, etc.
   ],
 
   // Links
   links: {
-    github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
+    github:
+      "https://github.com/Jagodana-Studio-Private-Limited/json-to-env",
     website: "https://jagodana.com",
   },
 
   // Footer
   footer: {
-    about: "{{FOOTER_ABOUT_DESCRIPTION}}",
+    about:
+      "JSON to ENV Converter is a free, client-side developer tool that converts JSON objects to .env format and vice versa. Your data never leaves your browser.",
     featuresTitle: "Features",
     features: [
-      "{{FEATURE_1}}",
-      "{{FEATURE_2}}",
-      "{{FEATURE_3}}",
-      "{{FEATURE_4}}",
+      "JSON → .env conversion",
+      ".env → JSON conversion",
+      "Nested key flattening",
+      "Copy to clipboard",
+      "Download output file",
     ],
   },
 
   // Hero Section
   hero: {
-    badge: "{{HERO_BADGE_TEXT}}",
-    titleLine1: "{{HERO_TITLE_LINE_1}}",
-    titleGradient: "{{HERO_TITLE_GRADIENT_TEXT}}",
-    subtitle: "{{HERO_SUBTITLE}}",
+    badge: "Free Developer Tool",
+    titleLine1: "Convert JSON to .env",
+    titleGradient: "Instantly & Free",
+    subtitle:
+      "Paste a JSON object and get a ready-to-use .env file in seconds. Or go the other way — convert .env variables back to JSON. Nested keys are flattened automatically. 100% in-browser, nothing uploaded.",
   },
 
   // Feature Cards (shown on homepage)
   featureCards: [
     {
-      icon: "{{FEATURE_ICON_1}}",
-      title: "{{FEATURE_CARD_TITLE_1}}",
-      description: "{{FEATURE_CARD_DESC_1}}",
+      icon: "🔄",
+      title: "Bidirectional",
+      description:
+        "Convert JSON → .env and .env → JSON with one click. Switch modes instantly.",
     },
     {
-      icon: "{{FEATURE_ICON_2}}",
-      title: "{{FEATURE_CARD_TITLE_2}}",
-      description: "{{FEATURE_CARD_DESC_2}}",
+      icon: "📦",
+      title: "Nested Flattening",
+      description:
+        "Deep JSON objects are flattened with underscore-separated keys: { db: { host } } → DB_HOST.",
     },
     {
-      icon: "{{FEATURE_ICON_3}}",
-      title: "{{FEATURE_CARD_TITLE_3}}",
-      description: "{{FEATURE_CARD_DESC_3}}",
+      icon: "🔒",
+      title: "100% Private",
+      description:
+        "All conversion happens in your browser. No uploads, no servers, no tracking.",
     },
   ],
 
   // Related Tools (cross-linking to sibling Jagodana tools for internal SEO)
   relatedTools: [
     {
-      name: "Favicon Generator",
-      url: "https://favicon-generator.jagodana.com",
-      icon: "🎨",
-      description: "Generate all favicon sizes + manifest from any image.",
+      name: "JSON Formatter",
+      url: "https://json-formatter.tools.jagodana.com",
+      icon: "📋",
+      description: "Format, validate, and prettify JSON in seconds.",
     },
     {
-      name: "Sitemap Checker",
-      url: "https://sitemap-checker.jagodana.com",
-      icon: "🔍",
-      description: "Discover and validate sitemaps on any website.",
+      name: "YAML ↔ JSON Converter",
+      url: "https://yaml-json-converter.tools.jagodana.com",
+      icon: "📄",
+      description: "Convert between YAML and JSON formats instantly.",
     },
     {
-      name: "Regex Playground",
-      url: "https://regex-playground.jagodana.com",
-      icon: "🧪",
-      description: "Build, test & debug regular expressions in real-time.",
+      name: "TOML Converter",
+      url: "https://toml-converter.tools.jagodana.com",
+      icon: "📝",
+      description: "Convert TOML to JSON, YAML, and more.",
     },
     {
-      name: "Screenshot Beautifier",
-      url: "https://screenshot-beautifier.jagodana.com",
-      icon: "📸",
-      description: "Transform screenshots into beautiful images.",
+      name: "ENV Validator",
+      url: "https://env-validator.tools.jagodana.com",
+      icon: "✅",
+      description: "Validate and lint your .env files against a schema.",
     },
     {
-      name: "Color Palette Explorer",
-      url: "https://color-palette-explorer.jagodana.com",
-      icon: "🎭",
-      description: "Extract color palettes from any image.",
+      name: "JSON Schema Generator",
+      url: "https://json-schema-generator.tools.jagodana.com",
+      icon: "🧩",
+      description: "Auto-generate JSON Schema from any JSON object.",
     },
     {
-      name: "Logo Maker",
-      url: "https://logo-maker.jagodana.com",
-      icon: "✏️",
-      description: "Create a professional logo in 60 seconds.",
+      name: "Base64 Image Encoder",
+      url: "https://base64-image-encoder.tools.jagodana.com",
+      icon: "🖼️",
+      description: "Encode images to Base64 data URIs for inline use.",
     },
   ],
 
   // HowTo Steps (drives HowTo JSON-LD schema for rich results)
   howToSteps: [
-    { name: "{{STEP_1_NAME}}", text: "{{STEP_1_TEXT}}", url: "" },
-    { name: "{{STEP_2_NAME}}", text: "{{STEP_2_TEXT}}", url: "" },
-    { name: "{{STEP_3_NAME}}", text: "{{STEP_3_TEXT}}", url: "" },
+    {
+      name: "Paste your JSON",
+      text: "Paste a JSON object into the left panel. The tool accepts any valid JSON.",
+      url: "",
+    },
+    {
+      name: "Click Convert",
+      text: "Press the Convert button (or use the keyboard shortcut). The .env output appears instantly in the right panel.",
+      url: "",
+    },
+    {
+      name: "Copy or Download",
+      text: "Click Copy to copy the .env file to your clipboard, or click Download to save it as a .env file.",
+      url: "",
+    },
   ],
-  howToTotalTime: "PT2M", // ISO 8601 duration (e.g., PT2M = 2 minutes)
+  howToTotalTime: "PT1M",
 
   // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
   faq: [
     {
-      question: "{{FAQ_QUESTION_1}}",
-      answer: "{{FAQ_ANSWER_1}}",
+      question: "What does this tool do?",
+      answer:
+        "This tool converts a JSON object into a .env file format — one KEY=VALUE line per entry. It also works in reverse: paste .env variables and get a JSON object back.",
     },
     {
-      question: "{{FAQ_QUESTION_2}}",
-      answer: "{{FAQ_ANSWER_2}}",
+      question: "How are nested JSON objects handled?",
+      answer:
+        'Nested JSON objects are flattened using underscore-separated keys. For example, { "database": { "host": "localhost", "port": 5432 } } becomes DATABASE_HOST=localhost and DATABASE_PORT=5432.',
     },
     {
-      question: "{{FAQ_QUESTION_3}}",
-      answer: "{{FAQ_ANSWER_3}}",
+      question: "Are values with spaces quoted automatically?",
+      answer:
+        'Yes. If a value contains spaces, special characters, or is a multi-word string, it is automatically wrapped in double quotes in the .env output (e.g., APP_NAME="My Application").',
     },
     {
-      question: "{{FAQ_QUESTION_4}}",
-      answer: "{{FAQ_ANSWER_4}}",
+      question: "Is my data safe?",
+      answer:
+        "Completely. All conversion logic runs in your browser using JavaScript. No data is sent to any server. You can even use this tool offline after the page loads.",
+    },
+    {
+      question: "Can I convert .env back to JSON?",
+      answer:
+        "Yes — switch to .env → JSON mode, paste your environment variables, and get a clean JSON object. Underscore-separated keys are kept as flat keys in the JSON output.",
+    },
+    {
+      question: "What file can I download?",
+      answer:
+        "You can download the output as a .env file (for JSON → .env mode) or as a .json file (for .env → JSON mode) with one click.",
     },
   ],
 
   // ====== PAGES (for sitemap + per-page SEO) ======
-  // Add every route here. Sitemap and generatePageMetadata() read from this.
   pages: {
     "/": {
-      title: "{{TOOL_TITLE}}",
-      description: "{{TOOL_DESCRIPTION}}",
+      title:
+        "JSON to ENV Converter — Convert JSON to .env and .env to JSON Free",
+      description:
+        "Instantly convert JSON objects to .env file format and .env files back to JSON. Supports nested key flattening, copy to clipboard, and file download. 100% client-side.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },
-    // Example page (DELETE when starting your tool, or customize)
-    "/about": {
-      title: "About - {{TOOL_NAME}}",
-      description: "Learn more about {{TOOL_NAME}} and how it works.",
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    // "/blog": {
-    //   title: "Blog - {{TOOL_NAME}}",
-    //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",
-    //   changeFrequency: "weekly" as const,
-    //   priority: 0.8,
-    // },
   },
 } as const;
 
